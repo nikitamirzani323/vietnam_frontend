@@ -4,8 +4,50 @@
     let listgongjunight = [];
     let tab_day = "bg-[#74aa63]"
     let tab_night = ""
-    
+
+    let lang = localStorage.getItem("lang");
+    let content_text_1 = "";
+    let content_text_2 = "";
+    if(lang == null || lang == "english"){
+        content_text_1 = "DATE";
+        content_text_2 = "RESULT";
+    }else{
+        content_text_1 = "NGÀY";
+        content_text_2 = "KẾT QUẢ";
+    }
     listvietnam = [
+        {tgl:"March 1, 2022",prize_1:"1134",prize_2:"1532",prize_3:"0923"},
+        {tgl:"March 2, 2022",prize_1:"2134",prize_2:"2532",prize_3:"1923"},
+        {tgl:"March 3, 2022",prize_1:"3134",prize_2:"3532",prize_3:"2923"},
+        {tgl:"March 4, 2022",prize_1:"4134",prize_2:"4532",prize_3:"3923"},
+        {tgl:"March 5, 2022",prize_1:"5134",prize_2:"5532",prize_3:"4923"},
+        {tgl:"March 6, 2022",prize_1:"6134",prize_2:"6532",prize_3:"5923"},
+        {tgl:"March 7, 2022",prize_1:"7134",prize_2:"7532",prize_3:"6923"},
+        {tgl:"March 8, 2022",prize_1:"8134",prize_2:"8532",prize_3:"7923"},
+        {tgl:"March 9, 2022",prize_1:"9134",prize_2:"9532",prize_3:"8923"},
+        {tgl:"March 10, 2022",prize_1:"0134",prize_2:"0532",prize_3:"9923"},
+        {tgl:"March 11, 2022",prize_1:"2234",prize_2:"1632",prize_3:"0023"},
+        {tgl:"March 12, 2022",prize_1:"2334",prize_2:"1732",prize_3:"0123"},
+        {tgl:"March 13, 2022",prize_1:"2434",prize_2:"1832",prize_3:"0223"},
+        {tgl:"March 14, 2022",prize_1:"2534",prize_2:"1932",prize_3:"0323"},
+        {tgl:"March 15, 2022",prize_1:"2634",prize_2:"1032",prize_3:"0423"},
+        {tgl:"March 16, 2022",prize_1:"2734",prize_2:"1132",prize_3:"0523"},
+        {tgl:"March 1, 2022",prize_1:"1134",prize_2:"1532",prize_3:"0923"},
+        {tgl:"March 2, 2022",prize_1:"2134",prize_2:"2532",prize_3:"1923"},
+        {tgl:"March 3, 2022",prize_1:"3134",prize_2:"3532",prize_3:"2923"},
+        {tgl:"March 4, 2022",prize_1:"4134",prize_2:"4532",prize_3:"3923"},
+        {tgl:"March 5, 2022",prize_1:"5134",prize_2:"5532",prize_3:"4923"},
+        {tgl:"March 6, 2022",prize_1:"6134",prize_2:"6532",prize_3:"5923"},
+        {tgl:"March 7, 2022",prize_1:"7134",prize_2:"7532",prize_3:"6923"},
+        {tgl:"March 8, 2022",prize_1:"8134",prize_2:"8532",prize_3:"7923"},
+        {tgl:"March 9, 2022",prize_1:"9134",prize_2:"9532",prize_3:"8923"},
+        {tgl:"March 10, 2022",prize_1:"0134",prize_2:"0532",prize_3:"9923"},
+        {tgl:"March 11, 2022",prize_1:"2234",prize_2:"1632",prize_3:"0023"},
+        {tgl:"March 12, 2022",prize_1:"2334",prize_2:"1732",prize_3:"0123"},
+        {tgl:"March 13, 2022",prize_1:"2434",prize_2:"1832",prize_3:"0223"},
+        {tgl:"March 14, 2022",prize_1:"2534",prize_2:"1932",prize_3:"0323"},
+        {tgl:"March 15, 2022",prize_1:"2634",prize_2:"1032",prize_3:"0423"},
+        {tgl:"March 16, 2022",prize_1:"2734",prize_2:"1132",prize_3:"0523"},
         {tgl:"March 1, 2022",prize_1:"1134",prize_2:"1532",prize_3:"0923"},
         {tgl:"March 2, 2022",prize_1:"2134",prize_2:"2532",prize_3:"1923"},
         {tgl:"March 3, 2022",prize_1:"3134",prize_2:"3532",prize_3:"2923"},
@@ -111,14 +153,14 @@
 </script>
 <section class="mt-5 mb-5 w-full relative">
     <hr class="w-full bg-[pink] h-[2px] ">
-    <h2 class="text-[pink] text-lg lg:text-3xl text-center bg-white absolute -top-4 left-10 z-auto">결과</h2>
+    <h2 class="text-[pink] text-lg lg:text-3xl text-center bg-white absolute -top-4 left-10 z-auto">{content_text_2}</h2>
 </section>
 
 <div class="overflow-x-auto mt-5 mb-10">
     <table class="table table-compact w-full">
         <thead>
             <tr>
-                <th class="text-xs lg:text-lg text-center">DATE</th>
+                <th class="text-xs lg:text-lg text-center">{content_text_1}</th>
                 <th class="text-xs lg:text-lg text-center">13:00</th>
                 <th class="text-xs lg:text-lg text-center">17:00</th>
                 <th class="text-xs lg:text-lg text-center">20:00</th>

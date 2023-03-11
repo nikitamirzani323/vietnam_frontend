@@ -1,6 +1,15 @@
+<script>
+    let lang = localStorage.getItem("lang");
+    let content_text_1 = "";
+    if(lang == null || lang == "english"){
+        content_text_1 = "RESPONSIBILITY";
+    }else{
+        content_text_1 = "CHƠI CÓ TRÁCH NHIỆM";
+    }
+</script>
 <section class="my-5 w-full relative">
     <hr class="w-full bg-[pink] h-[2px] ">
-    <h2 class="text-[pink] text-lg lg:text-3xl text-center bg-white absolute -top-4 left-10 z-auto">책임감 있게 플레이</h2>
+    <h2 class="text-[pink] text-lg lg:text-3xl text-center bg-white absolute -top-4 left-10 z-auto">{content_text_1}</h2>
 </section>
 <img class="w-full mt-5 lg:mt-10" src="images/responsible.jpg" alt="결공주 Lottery Pools / 집">
 <section class="p-2 lg:p-10">

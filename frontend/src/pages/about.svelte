@@ -1,6 +1,15 @@
+<script>
+    let lang = localStorage.getItem("lang");
+    let content_text_1 = "";
+    if(lang == null || lang == "english"){
+        content_text_1 = "ABOUT";
+    }else{
+        content_text_1 = "VỀ CHÚNG TÔI";
+    }
+</script>
 <section class="my-5 w-full relative">
     <hr class="w-full bg-[pink] h-[2px] ">
-    <h2 class="text-[pink] text-lg lg:text-3xl text-center bg-white absolute -top-4 left-10 z-auto">우리에 대해</h2>
+    <h2 class="text-[pink] text-lg lg:text-3xl text-center bg-white absolute -top-4 left-10 z-auto">{content_text_1}</h2>
 </section>
 <div class="flex flex-row mt-10">
     <section class="w-full self-center hidden lg:block">
