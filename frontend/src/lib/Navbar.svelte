@@ -39,7 +39,7 @@
   <nav class="navbar  w-full ">
     <div class="flex-1">
       <a class="btn btn-ghost  normal-case text-xl" use:link href="/">
-        <img class="w-full lg:w-[135px]" src="images/logo.png" alt="결공주 Lottery Pools / 집">
+        <img class="w-full lg:w-[100px]" src="images/logo4d.png" alt="결공주 Lottery Pools / 집">
       </a>
     </div>
     <div class="flex-none">
