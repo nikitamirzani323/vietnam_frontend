@@ -38,7 +38,7 @@
 </script>
 
 <Navbar />
-<main class="p-2 lg:p-3 max-w-6xl mx-auto  xl:rounded-sm mt-2 mb-2">
+<main class="p-0 lg:p-3 lg:max-w-6xl lg:mx-auto  xl:rounded-sm mt-2">
   <Router {routes} />
 </main>
 <Footer />

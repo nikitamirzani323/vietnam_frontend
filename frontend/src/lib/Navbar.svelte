@@ -28,7 +28,7 @@
     };
 </script>
 <main class="w-full max-w-6xl mx-auto">
-  <div class="flex justify-end gap-1">
+  <div class="lg:flex justify-end gap-1 hidden">
     <img on:click={() => {
           changeCountry("vietnam");
       }} class="cursor-pointer mt-1" src="http://lottery-vietnam.com/en/images/vie.jpg" alt="">
@@ -36,10 +36,10 @@
           changeCountry("english");
       }} class="cursor-pointer mt-1" src="http://lottery-vietnam.com/en/images/en.jpg" alt="">
   </div>
-  <nav class="navbar  w-full ">
-    <div class="flex-1">
-      <a class="btn btn-ghost  normal-case text-xl" use:link href="/">
-        <img class="w-full lg:w-[100px] -mt-8" src="images/logo4d.png" alt="결공주 Lottery Pools / 집">
+  <nav class="navbar  w-full bg-black lg:bg-transparent">
+    <div class="flex-1 w-full">
+      <a class="btn btn-ghost  normal-case text-xl text-center" use:link href="/">
+        <img class="w-[100px] lg:w-[250px] lg:-mt-8" src="images/logocombine.png" alt="Hải Phòng Lottery">
       </a>
     </div>
     <div class="flex-none ">
@@ -63,14 +63,14 @@
     </div>
     <div class="dropdown dropdown-end lg:hidden">
       <label tabindex="0" class="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 bg-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
       </label>
-      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-content rounded-box w-52">
         <li><a class="text-xs text-white font-bold hover:bg-transparent focus:bg-transparent"use:link href="/">{content_text_1}</a></li>
         <li><a class="text-xs text-white font-bold hover:bg-transparent focus:bg-transparent"use:link href="/result">{content_text_2}</a></li>
-        <li><a class="text-xs text-white font-bold hover:bg-transparent focus:bg-transparent"use:link href="/payment">{content_text_3}</a></li>
-        <li><a class="text-xs text-white font-bold hover:bg-transparent focus:bg-transparent"use:link href="/responsibility">{content_text_4}</a></li>
-        <li><a class="text-xs text-white font-bold hover:bg-transparent focus:bg-transparent"use:link href="/about">{content_text_5}</a></li>
+        <li><a class="text-xs text-white font-bold hover:bg-transparent focus:bg-transparent"use:link href="/">{content_text_3}</a></li>
+        <li><a class="text-xs text-white font-bold hover:bg-transparent focus:bg-transparent"use:link href="/">{content_text_4}</a></li>
+        <li><a class="text-xs text-white font-bold hover:bg-transparent focus:bg-transparent"use:link href="/">{content_text_5}</a></li>
       </ul>
     </div>
   </nav>

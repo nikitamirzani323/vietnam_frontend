@@ -2,7 +2,7 @@
   import Carousel from 'svelte-carousel'
   let slider = [
     {img:"images/banner_1.png"},
-    {img:"images/banner_2.png"},
+    {img:"images/banner_11.png"},
     {img:"images/banner_2.png"},
   ]
 </script>
