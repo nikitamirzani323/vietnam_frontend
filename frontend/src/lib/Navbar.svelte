@@ -39,7 +39,7 @@
   <nav class="navbar  w-full bg-black lg:bg-transparent">
     <div class="flex-1 w-full">
       <a class="btn btn-ghost  normal-case text-xl text-center" use:link href="/">
-        <img class="w-[100px] lg:w-[250px] lg:-mt-8" src="images/logocombine.png" alt="Hải Phòng Lottery">
+        <img class="w-[150px] lg:w-[250px] lg:-mt-8" src="images/logocombine2.png" alt="Hải Phòng Lottery">
       </a>
     </div>
     <div class="flex-none ">

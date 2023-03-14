@@ -159,7 +159,7 @@
    
   </script>
 <section class="hidden lg:flex gap-2 my-5">
-    <Carousel />
+    <img src="images/banner_1.png" alt="">
 </section>
 <section class="lg:flex w-full gap-1">
     <div class="card w-full lg:w-1/2 h-1/2 shadow-xl text-neutral-content rounded-md p-2 ">
@@ -206,6 +206,7 @@
                 </div>
             </div>
         </div>
+        <img class="hidden lg:flex" src="images/banner_3.jpg" alt="">
     </div>
     <div class="card w-full shadow-xl text-neutral-content rounded-md p-2">
         <div class="card-body p-1 mb-1">
@@ -231,6 +232,8 @@
                     {/each}
                 </tbody>
             </table>
+            
+            <img src="images/banner_11.png" alt="">
             <img src="images/banner_2.png" alt="">
         </div>
     </div>
