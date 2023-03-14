@@ -1,9 +1,10 @@
-<footer class="footer px-10 py-4 border-t text-base-content border-base-300">
+<img src="images/landscape_vietnam.png" alt="">
+<footer class="footer px-10 py-4 border-t text-base-content ">
   <main class="w-full max-w-6xl mx-auto">
     <div class="flex justify-around w-full">
-      <img class="hidden lg:block" src="images/logo.png" alt="결공주 Lottery Pools / 집">
-      <div class="md:place-self-center md:justify-self-end text-[pink] text-xs lg:text-[20px]">
-        Copyright © 2021 - 복권 풀. 판권 소유.
+      <img class="hidden lg:block" src="images/logo4d.png" alt="Hải Phòng Lottery">
+      <div class="md:place-self-center md:justify-self-end text-[#7ea8da] text-xs lg:text-[20px]">
+        Copyright © 2020 - Hải Phòng
       </div>
     </div>
   </main>

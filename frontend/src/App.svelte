@@ -38,7 +38,7 @@
 </script>
 
 <Navbar />
-<main class="p-2 lg:p-3 max-w-6xl mx-auto lg:glass lg:bg-opacity-60 xl:rounded-sm mt-2 mb-2">
+<main class="p-2 lg:p-3 max-w-6xl mx-auto  xl:rounded-sm mt-2 mb-2">
   <Router {routes} />
 </main>
 <Footer />

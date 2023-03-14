@@ -153,28 +153,28 @@
 </script>
 <section class="mt-5 mb-5 w-full relative">
     <hr class="w-full bg-[pink] h-[2px] ">
-    <h2 class="text-[pink] text-lg lg:text-3xl text-center bg-white absolute -top-4 left-10 z-auto">{content_text_2}</h2>
+    <h2 class="text-[#7ea8da] text-lg lg:text-3xl text-center bg-white absolute -top-4 left-10 z-auto">{content_text_2}</h2>
 </section>
 
 <div class="overflow-x-auto mt-5 mb-10">
     <table class="table table-compact w-full">
         <thead>
             <tr>
-                <th class="text-xs lg:text-lg text-center">{content_text_1}</th>
-                <th class="text-xs lg:text-lg text-center">13:00</th>
-                <th class="text-xs lg:text-lg text-center">17:00</th>
-                <th class="text-xs lg:text-lg text-center">20:00</th>
-                <th class="text-xs lg:text-lg text-center">22:00</th>
+                <th class="text-xs lg:text-lg text-center bg-[#7ea8da] text-white">{content_text_1}</th>
+                <th class="text-xs lg:text-lg text-center bg-[#7ea8da] text-white">13:00</th>
+                <th class="text-xs lg:text-lg text-center bg-[#7ea8da] text-white">17:00</th>
+                <th class="text-xs lg:text-lg text-center bg-[#7ea8da] text-white">20:00</th>
+                <th class="text-xs lg:text-lg text-center bg-[#7ea8da] text-white">22:00</th>
             </tr>
         </thead>
         <tbody>
             {#each listvietnam as rec}
             <tr>
-                <td class="text-xs lg:text-sm text-center">{rec.tgl}</td>
-                <td class="text-xs lg:text-sm text-center">{rec.prize_1}</td>
-                <td class="text-xs lg:text-sm text-center">{rec.prize_2}</td>
-                <td class="text-xs lg:text-sm text-center">{rec.prize_3}</td>
-                <td class="text-xs lg:text-sm text-center">{rec.prize_1}</td>
+                <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#7ea8da] text-[#7ea8da]">{rec.tgl}</td>
+                <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#7ea8da] text-[#7ea8da]">{rec.prize_1}</td>
+                <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#7ea8da] text-[#7ea8da]">{rec.prize_2}</td>
+                <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#7ea8da] text-[#7ea8da]">{rec.prize_3}</td>
+                <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#7ea8da] text-[#7ea8da]">{rec.prize_1}</td>
             </tr>  
             {/each}
         </tbody>
