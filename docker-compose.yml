@@ -1,12 +1,12 @@
 version: '2'
 
 services:
-  frontend-gongju:
-    container_name: frontend-gongju
-    image: frontend-gongju:0.0.1
+  frontend-vietnam:
+    container_name: frontend-vietnam
+    image: frontend-vietnam:0.0.1
     build: .
     volumes:
     - ./svelte:/app/svelte
     ports:
-      - 7075:7075
+      - 7071:7071
     restart: always

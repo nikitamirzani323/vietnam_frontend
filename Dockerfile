@@ -27,7 +27,7 @@ RUN apk add tzdata
 COPY --from=totosveltebuilderagen /svelteapp/dist ./frontend/dist
 COPY --from=agenclientbuilds /appbuilds/binary .
 COPY --from=agenclientbuilds /appbuilds/.env /app/.env
-ENV PORT=7075
+ENV PORT=7071
 ENV TZ=Asia/Jakarta
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
