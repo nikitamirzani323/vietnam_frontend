@@ -31,15 +31,15 @@
   <div class="lg:flex justify-end gap-1 hidden">
     <img on:click={() => {
           changeCountry("vietnam");
-      }} class="cursor-pointer mt-1" src="http://lottery-vietnam.com/en/images/vie.jpg" alt="">
+      }} class="cursor-pointer mt-1" src="images/vie.jpg" alt="">
     <img on:click={() => {
           changeCountry("english");
-      }} class="cursor-pointer mt-1" src="http://lottery-vietnam.com/en/images/en.jpg" alt="">
+      }} class="cursor-pointer mt-1" src="images/en.jpg" alt="">
   </div>
-  <nav class="navbar  w-full bg-black lg:bg-transparent">
+  <nav class="navbar  w-full bg-transparent">
     <div class="flex-1 w-full">
       <a class="btn btn-ghost  normal-case text-xl text-center" use:link href="/">
-        <img class="w-[150px] lg:w-[250px] lg:-mt-8" src="images/logocombine2.png" alt="Hải Phòng Lottery">
+        <img class="w-[250px] -mt-8 lg:w-[250px] lg:-mt-8" src="logodanang.png" alt="Đà Nẵng Lottery">
       </a>
     </div>
     <div class="flex-none ">

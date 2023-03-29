@@ -158,19 +158,19 @@
     ];
    
   </script>
-<section class="hidden lg:flex gap-2 my-5">
+<section class="hidden lg:flex gap-2 lg:-mt-2">
     <Carousel />
 </section>
-<section class="lg:flex w-full gap-1">
+<section class="lg:flex w-full gap-1 bg-[#3d6376] lg:-mt-6">
     <div class="card w-full lg:w-1/2 h-1/2 shadow-xl text-neutral-content rounded-md p-2 ">
-        <div class="card-body p-1 mb-1 border-[1px] border-[#7ea8da]">
-            <center class="border-b-2 border-[#f3b6c0] p-2 font-bold w-full text-[#7ea8da]">
+        <div class="card-body p-1 mb-1 border-[1px] border-[#90a5b1]">
+            <center class="border-b-2 border-[#90a5b1] p-2 font-bold w-full text-white">
                 {livedraw_text_1}<br />
                 {livedraw_text_2}<br />
                 {livedraw_text_3} : {date_draw}
             </center>
             <div class="lg:flex gap-1">
-                <div class="w-full text-center text-xl lg:w-20 lg:text-left lg:text-2xl font-bold self-center text-[#7ea8da]">13:00</div>
+                <div class="w-full text-center text-xl lg:w-20 lg:text-left lg:text-2xl font-bold self-center text-white">13:00</div>
                 <div class="flex justify-center gap-1 w-full ">
                     <img class="w-14 lg:w-[60px]" src="{day_img_1_prize1300}" alt="">
                     <img class="w-14 lg:w-[60px]" src="{day_img_2_prize1300}" alt="">
@@ -179,7 +179,7 @@
                 </div>
             </div>
             <div class="lg:flex gap-1">
-                <div class="w-full text-center text-xl lg:w-20 lg:text-left lg:text-2xl font-bold self-center text-[#7ea8da]">17:00</div>
+                <div class="w-full text-center text-xl lg:w-20 lg:text-left lg:text-2xl font-bold self-center text-white">17:00</div>
                 <div class="flex justify-center gap-1 w-full ">
                     <img class="w-14 lg:w-[60px]" src="{day_img_1_prize1700}" alt="">
                     <img class="w-14 lg:w-[60px]" src="{day_img_2_prize1700}" alt="">
@@ -188,7 +188,7 @@
                 </div>
             </div>
             <div class="lg:flex gap-1">
-                <div class="w-full text-center text-xl lg:w-20 lg:text-left lg:text-2xl font-bold self-center text-[#7ea8da]">20:00</div>
+                <div class="w-full text-center text-xl lg:w-20 lg:text-left lg:text-2xl font-bold self-center text-white">20:00</div>
                 <div class="flex justify-center gap-1 w-full ">
                     <img class="w-14 lg:w-[60px]" src="{day_img_1_prize2000}" alt="">
                     <img class="w-14 lg:w-[60px]" src="{day_img_2_prize2000}" alt="">
@@ -197,7 +197,7 @@
                 </div>
             </div>
             <div class="lg:flex gap-1">
-                <div class="w-full text-center text-xl lg:w-20 lg:text-left lg:text-2xl font-bold self-center text-[#7ea8da]">22:00</div>
+                <div class="w-full text-center text-xl lg:w-20 lg:text-left lg:text-2xl font-bold self-center text-white">22:00</div>
                 <div class="flex justify-center gap-1 w-full ">
                     <img class="w-14 lg:w-[60px]" src="{day_img_1_prize2200}" alt="">
                     <img class="w-14 lg:w-[60px]" src="{day_img_2_prize2200}" alt="">
@@ -212,41 +212,42 @@
             <table class="table table-compact w-full">
                 <thead>
                     <tr>
-                        <th class="text-xs lg:text-sm text-center bg-[#7ea8da]">{livedraw_text_4}</th>
-                        <th class="text-xs lg:text-sm text-center bg-[#7ea8da]">13:00</th>
-                        <th class="text-xs lg:text-sm text-center bg-[#7ea8da]">17:00</th>
-                        <th class="text-xs lg:text-sm text-center bg-[#7ea8da]">20:00</th>
-                        <th class="text-xs lg:text-sm text-center bg-[#7ea8da]">22:00</th>
+                        <th class="text-xs lg:text-sm text-center bg-white text-[#3d6376]">{livedraw_text_4}</th>
+                        <th class="text-xs lg:text-sm text-center bg-white text-[#3d6376]">13:00</th>
+                        <th class="text-xs lg:text-sm text-center bg-white text-[#3d6376]">17:00</th>
+                        <th class="text-xs lg:text-sm text-center bg-white text-[#3d6376]">20:00</th>
+                        <th class="text-xs lg:text-sm text-center bg-white text-[#3d6376]">22:00</th>
                     </tr>
                 </thead>
                 <tbody>
                     {#each listvietnam as rec}
                     <tr>
-                        <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#7ea8da] text-[#7ea8da]">{rec.tgl}</td>
-                        <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#7ea8da] text-[#7ea8da]">{rec.prize_1}</td>
-                        <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#7ea8da] text-[#7ea8da]">{rec.prize_2}</td>
-                        <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#7ea8da] text-[#7ea8da]">{rec.prize_3}</td>
-                        <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#7ea8da] text-[#7ea8da]">{rec.prize_4}</td>
+                        <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#90a5b1] text-white">{rec.tgl}</td>
+                        <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#90a5b1] text-white">{rec.prize_1}</td>
+                        <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#90a5b1] text-white">{rec.prize_2}</td>
+                        <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#90a5b1] text-white">{rec.prize_3}</td>
+                        <td class="text-xs lg:text-sm text-center bg-transparent border-[1px] border-[#90a5b1] text-white">{rec.prize_4}</td>
                     </tr>
                     {/each}
                 </tbody>
             </table>
-            
-            <img src="images/banner_2.png" alt="">
         </div>
     </div>
     
 </section>
-<section class="mt-5">
+<section class="w-full">
+    <img src="images/banner/banner_3.png" alt="">
+</section>
+<section class="mt-0 bg-black p-2">
     <div class="flex flex-col w-full items-stretch">
         <div class="self-center text-[#7ea8da] text-xs lg:text-sm">{livedraw_text_5}</div>
-        <div class="flex gap-1 self-center">
-            <img class="w-10 lg:w-[50px]" src="images/visa.png" alt="">
-            <img class="w-10 lg:w-[50px]" src="images/mastercard.png" alt="">
-            <img class="w-10 lg:w-[50px]" src="images/paypal.png" alt="">
+        <div class="flex gap-1 self-center mt-2">
+            <img class="w-10 lg:w-[50px] lg:h-[30px]" src="images/visa.png" alt="">
+            <img class="w-10 lg:w-[50px] lg:h-[30px]" src="images/mastercard.png" alt="">
+            <img class="w-10 lg:w-[50px] lg:h-[30px]" src="images/paypal.png" alt="">
         </div>
     </div>
-    <div class="flex justify-between w-full mt-5">
+    <center class="flex justify-center w-full mt-5">
         <p class="w-full text-[#7ea8da] text-xs lg:text-sm p-2 justify-center">
             {#if livedraw_text_6}
             Players must be 18 years old. If you do not have control, gambling may be harmful. Please, play with responsibility.
@@ -262,8 +263,11 @@
             Số đăng ký nhãn hiệu "Hà Nội" 958786573-gf-94515 được sở hữu và điều hành bởi Hiệp hội Lotera Hà Nội Lotera.
             {/if}
             
-        </p>
-      
-        
-    </div>
+        </p>  
+    </center>
+    <center class="w-full h-20">
+        <div class="md:place-self-center md:justify-self-end text-[#7ea8da] text-xs lg:text-[20px]">
+            Copyright © 2020 - Đà Nẵng Lottery
+          </div>
+    </center>
 </section>

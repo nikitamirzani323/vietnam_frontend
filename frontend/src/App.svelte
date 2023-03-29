@@ -2,12 +2,8 @@
   import Router from "svelte-spa-router";
 	import { wrap } from "svelte-spa-router/wrap";
   import Navbar from './lib/Navbar.svelte'
-  import Footer from './lib/Footer.svelte'
   import Home from "./pages/home.svelte";
   import Result from "./pages/result.svelte";
-  import Payment from "./pages/payment.svelte";
-  import About from "./pages/about.svelte";
-  import Responsibility from "./pages/responsibility.svelte";
   import NotFound from "./pages/NotFound.svelte";
   export let path_api = "";
   let routes = "";
@@ -24,15 +20,6 @@
 				},
 				component: Result,
 			}),
-      "/payment": wrap({
-				component: Payment,
-			}),
-      "/about": wrap({
-				component: About,
-			}),
-      "/responsibility": wrap({
-				component: Responsibility,
-			}),
 			"*": NotFound,
 	};
 </script>
@@ -41,7 +28,6 @@
 <main class="p-0 lg:p-3 lg:max-w-6xl lg:mx-auto  xl:rounded-sm mt-2">
   <Router {routes} />
 </main>
-<Footer />
 
 
 <style global lang="postcss">
